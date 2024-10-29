@@ -1,0 +1,22 @@
+@mixin center {
+  text: {
+    align: center;
+  }
+  justify: {
+    content: center;
+  }
+}
+
+@mixin rounded-border {
+  border: {
+    radius: 1rem;
+  }
+}
+
+@mixin black-border {
+  border: {
+    color: black;
+    width: 2px;
+    style: solid;
+  }
+}

@@ -1,0 +1,48 @@
+@use "sass:list";
+@use "sass:color";
+
+@import "_reset.scss";
+@import "_variables.scss";
+
+body {
+  $font-stack: list.append($font-stack, sans-serif);
+  font: $font-stack;
+  font: {
+    size: 1.5rem;
+    weight: bold;
+  }
+  height: 100vh;
+}
+
+p {
+  color: $text-color;
+  text: {
+    align: center;
+  }
+}
+
+.header {
+  grid-area: header;
+  background-color: $header-color;
+}
+.left {
+  grid-area: left;
+  background-color: $left-color;
+}
+.right {
+  grid-area: right;
+  background-color: $right-color;
+}
+
+.container {
+  display: grid;
+  grid: {
+    template-rows: 1fr 7fr;
+    template-areas: "header header header" "left left right";
+  }
+  gap: 1rem;
+  padding: 1%;
+  height: 96%;
+}
+
+@debug $font-stack;

@@ -1,0 +1,114 @@
+@use "sass:list";
+@use "sass:color";
+
+@import "_reset.scss";
+@import "_variables.scss";
+
+body {
+  $font-stack: list.append($font-stack, sans-serif);
+  font: $font-stack;
+  font: {
+    size: 1.2rem;
+  }
+  height: 100vh;
+  color: $text-color;
+}
+
+.header {
+  grid: {
+    area: header;
+  }
+  background-color: $header-color;
+  padding: 0 3rem;
+  font: {
+    size: 1.5rem;
+  }
+}
+
+.sidebar {
+  grid: {
+    area: sidebar;
+  }
+  background: {
+    color: $sidebar-color;
+  }
+  display: flex;
+  flex: {
+    direction: column;
+  }
+}
+
+.sidebar-element {
+  padding: 1% 5%;
+  color: $text-color;
+  background: {
+    color: $elements-color;
+  }
+  text: {
+    decoration: none;
+  }
+  border: {
+    bottom: {
+      width: 0.1rem;
+      style: solid;
+      color: $sidebar-color;
+    }
+  }
+  &:hover {
+    background: $hover-color;
+  }
+}
+
+.content {
+  grid: {
+    area: content;
+  }
+  background: {
+    color: $background-color;
+  }
+  display: flex;
+  flex: {
+    direction: row;
+  }
+}
+
+.footer {
+  grid: {
+    area: footer;
+  }
+  background: {
+    color: $header-color;
+  }
+  text: {
+    align: center;
+  }
+}
+
+.article {
+  margin: 1rem;
+  width: 33%;
+  padding: 0 2rem;
+  background: {
+    color: $elements-color;
+  }
+  text: {
+    align: justify;
+  }
+  border: {
+    radius: 1rem;
+  }
+}
+
+.container {
+  display: grid;
+  grid: {
+    template: {
+      columns: 1fr 5fr;
+      rows: 2fr 12fr 1fr;
+      areas: "header header" "sidebar content" "footer footer";
+    }
+  }
+  height: 100%;
+}
+
+@debug $font-stack;

@@ -1,0 +1,183 @@
+@use "sass:list";
+@use "sass:color";
+@use "_mixins.scss" as mixins;
+
+@import "_variables.scss";
+@import "_base.scss";
+
+h2 {
+  @include mixins.headline;
+  @include mixins.center;
+}
+
+h3 {
+  @include mixins.headline;
+  margin: {
+    bottom: 0;
+  }
+}
+
+.container {
+  display: flex;
+  flex: {
+    direction: column;
+  }
+}
+
+.headbar {
+  font: {
+    size: 1.5rem;
+  }
+  background: {
+    color: $header-color;
+  }
+  padding: 0 3rem;
+}
+
+.header {
+  @extend .headbar;
+  display: flex;
+  flex: {
+    direction: row;
+  }
+}
+
+.logo {
+  width: 5rem;
+  height: 5rem;
+  margin: {
+    top: auto;
+    bottom: auto;
+    right: 1rem;
+  }
+}
+
+.navbar {
+  background: {
+    color: $navbar-color;
+  }
+  display: flex;
+  flex: {
+    direction: row;
+  }
+}
+
+.navbar-element {
+  width: 5rem;
+  padding: 0 5rem;
+  color: $text-color;
+  background: {
+    color: $navbar-color;
+  }
+  text: {
+    decoration: none;
+    align: center;
+  }
+  &:hover {
+    background: $hover-color;
+  }
+}
+
+.content {
+  background: {
+    color: $background-color;
+  }
+  display: flex;
+  flex: {
+    direction: column;
+  }
+  padding: 0 2rem;
+
+  & > .content {
+    @include mixins.rounded-border;
+    margin: {
+      top: 2rem;
+      bottom: 2rem;
+    }
+    background: {
+      color: $content-color;
+    }
+    display: flex;
+    flex: {
+      direction: column;
+    }
+  }
+}
+
+.description {
+  @include mixins.rounded-border;
+  margin: {
+    top: 2rem;
+  }
+  padding: 0 2rem;
+  background: {
+    color: $content-color;
+  }
+}
+
+.products {
+  @include mixins.rounded-border;
+  background: {
+    color: $content-color;
+  }
+  display: flex;
+  flex: {
+    direction: row;
+  }
+}
+
+.product {
+  @include mixins.rounded-border;
+  width: 33%;
+  display: flex;
+  flex: {
+    direction: column;
+  }
+  background: {
+    color: $elements-color;
+  }
+  text: {
+    align: justify;
+  }
+  margin: 1rem;
+  padding: 0 2rem;
+}
+
+.product > img {
+  width: 80%;
+  margin: auto;
+}
+
+.clients {
+  @include mixins.rounded-border;
+  background: {
+    color: $content-color;
+  }
+  display: flex;
+  flex: {
+    direction: row;
+  }
+}
+
+.client {
+  @include mixins.rounded-border;
+  margin: 1rem;
+  width: 25%;
+  padding: 0 2rem;
+  background: {
+    color: $elements-color;
+  }
+  text: {
+    align: justify;
+  }
+}
+
+.guarantees {
+  @extend .headbar;
+  @include mixins.center;
+  margin: {
+    top: 2rem;
+  }
+}
+
+@debug $font-stack;

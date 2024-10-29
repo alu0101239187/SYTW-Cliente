@@ -1,0 +1,26 @@
+@mixin headline {
+  font: {
+    weight: bold;
+  }
+  text: {
+    decoration: underline;
+  }
+}
+
+@mixin center {
+  text: {
+    align: center;
+  }
+  justify: {
+    content: center;
+  }
+}
+
+@mixin form {
+}
+
+@mixin rounded-border {
+  border: {
+    radius: 1rem;
+  }
+}

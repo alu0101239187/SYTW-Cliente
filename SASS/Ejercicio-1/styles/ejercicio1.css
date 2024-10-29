@@ -1,0 +1,41 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font: Helvetica, Arial, sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  height: 100vh;
+}
+
+p {
+  color: white;
+  text-align: center;
+}
+
+.header {
+  grid-area: header;
+  background-color: gray;
+}
+
+.left {
+  grid-area: left;
+  background-color: rgb(0, 255, 255);
+}
+
+.right {
+  grid-area: right;
+  background-color: rgb(50, 205, 50);
+}
+
+.container {
+  display: grid;
+  grid-template-rows: 1fr 7fr;
+  grid-template-areas: "header header header" "left left right";
+  gap: 1rem;
+  padding: 1%;
+  height: 96%;
+}/*# sourceMappingURL=ejercicio1.css.map */
