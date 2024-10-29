@@ -34,7 +34,7 @@ gulp.task("minify-js", function () {
 
 gulp.task("minify-images", function () {
   return gulp
-    .src("./src/images/*")
+    .src("./src/images/*", { encoding: false })
     .pipe(
       imagemin({
         optimizationLevel: 5,
