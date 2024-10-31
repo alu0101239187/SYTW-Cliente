@@ -5,6 +5,9 @@
 @import "_variables.scss";
 @import "_reset.scss";
 
+$component-color-1: #f0f0f0;
+$component-color-2: #c0c0c0;
+
 h2 {
   @include mixins.center;
 }
@@ -39,7 +42,7 @@ button {
     direction: row;
   }
   background: {
-    color: rgb(238, 189, 125);
+    color: $component-color-1;
   }
 }
 
@@ -53,7 +56,7 @@ button {
     direction: row;
   }
   background: {
-    color: rgb(176, 212, 252);
+    color: $component-color-2;
   }
 }
 
@@ -67,7 +70,7 @@ button {
   }
   &:hover {
     background: {
-      color: rgb(156, 202, 255);
+      color: $component-color-2;
     }
   }
 }
@@ -83,7 +86,7 @@ button {
   }
   padding: 2rem;
   background: {
-    color: rgb(255, 250, 224);
+    color: $component-color-1;
   }
 }
 
@@ -94,10 +97,10 @@ button {
     direction: column;
   }
   padding: 2rem;
-  background: {
-    color: rgb(227, 184, 255);
-  }
   margin-bottom: 2rem;
+  background: {
+    color: $component-color-2;
+  }
 }
 
 .assessments-component {
@@ -108,7 +111,7 @@ button {
   }
   padding: 2rem;
   background: {
-    color: rgb(184, 255, 214);
+    color: $component-color-2;
   }
 }
 
@@ -135,6 +138,9 @@ button {
   }
   margin: 1rem;
   padding: 0 2rem;
+  background: {
+    color: $component-color-1;
+  }
 }
 
 .footer {
@@ -144,7 +150,7 @@ button {
     area: footer;
   }
   background: {
-    color: rgb(238, 125, 125);
+    color: $component-color-2;
   }
 }
 

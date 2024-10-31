@@ -1,0 +1,42 @@
+<template id="article-card">
+  <style>
+    #card {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      background-color: #ffffff;
+      text-align: justify;
+      border-radius: 1rem;
+      margin: 1.5rem;
+      padding: 0 2rem;
+    }
+
+    #text {
+      margin-bottom: auto;
+    }
+
+    #days-published {
+      font-size: 0.8em;
+    }
+
+    button {
+      width: 100%;
+      padding: 0.8rem;
+      border-radius: 1rem;
+      border: 1px solid #000000;
+      cursor: pointer;
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .active {
+      background-color: #bbbbbb;
+    }
+  </style>
+  <div id="card" class="card">
+    <h3 id="title"></h3>
+    <p id="text"></p>
+    <p id="days-published"></p>
+    <button>Mostrar valoraciones</button>
+  </div>
+</template>
