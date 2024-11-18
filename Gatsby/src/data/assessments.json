@@ -1,0 +1,20 @@
+{
+  "assessments": [
+    {
+      "assessment": "Esta noticia ofrece información relevante, aunque se podrían incluir más detalles para brindar una visión completa. La claridad en los datos mejora la comprensión del lector.",
+      "author": "Ana López"
+    },
+    {
+      "assessment": "La cobertura de los hechos parece adecuada, aunque algunas fuentes adicionales habrían dado mayor contexto. La presentación es concisa y fácil de seguir.",
+      "author": "Carlos Ramírez"
+    },
+    {
+      "assessment": "La noticia está bien estructurada y cubre lo esencial, pero algunos puntos parecen algo superficiales. Un análisis más profundo podría enriquecer el contenido.",
+      "author": "María Fernández"
+    },
+    {
+      "assessment": "La información presentada es clara y accesible, aunque el tema podría haberse explorado con mayor amplitud. La noticia cumple con su propósito informativo de manera eficaz.",
+      "author": "Jorge Martínez"
+    }
+  ]
+}

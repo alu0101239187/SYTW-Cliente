@@ -1,0 +1,19 @@
+@use "_variables" as *;
+
+.footer {
+  text: {
+    align: center;
+  }
+  justify: {
+    content: center;
+  }
+  font: {
+    size: 1.3rem;
+  }
+  background: {
+    color: $footer-color;
+  }
+  margin: {
+    top: 2rem;
+  }
+}

@@ -1,0 +1,17 @@
+@use "_variables" as *;
+
+.header {
+  display: flex;
+  flex: {
+    direction: row;
+  }
+  font: {
+    size: 1.5rem;
+  }
+  background: {
+    color: $header-color;
+  }
+  padding: {
+    left: 3rem;
+  }
+}

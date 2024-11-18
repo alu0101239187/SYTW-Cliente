@@ -1,0 +1,19 @@
+.presentation {
+  text: {
+    align: justify;
+  }
+  padding: {
+    left: 15rem;
+    right: 15rem;
+  }
+}
+
+.image {
+  width: 50%;
+  height: 50%;
+  border: {
+    radius: 1rem;
+  }
+  margin: 2rem auto;
+  display: block;
+}

@@ -1,0 +1,74 @@
+@use "_variables" as *;
+
+.card {
+  flex: 1;
+  display: flex;
+  flex: {
+    direction: column;
+  }
+  background: {
+    color: $card-color;
+  }
+  border: {
+    radius: 1rem;
+  }
+  margin: 1.5rem;
+}
+
+.image {
+  width: 100%;
+  height: 20rem;
+  object: {
+    fit: cover;
+  }
+  border: {
+    radius: 1rem 1rem 0 0;
+  }
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex: {
+    direction: column;
+  }
+  padding: 0 2rem;
+}
+
+.text {
+  flex: 1;
+  text: {
+    align: justify;
+  }
+}
+
+.daysPublished {
+  font: {
+    size: 0.8em;
+  }
+  text: {
+    align: left;
+  }
+}
+
+.button {
+  margin: 1rem 0;
+  padding: 0.5rem 2rem;
+  font: {
+    size: 1em;
+  }
+  border: {
+    radius: 0.5rem;
+  }
+  background: {
+    color: $button-color;
+  }
+  color: white;
+  cursor: pointer;
+
+  &:hover {
+    background: {
+      color: $button-hover-color;
+    }
+  }
+}

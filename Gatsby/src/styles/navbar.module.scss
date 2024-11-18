@@ -1,0 +1,39 @@
+@use "_variables" as *;
+
+.navbar {
+  display: flex;
+  flex: {
+    direction: row;
+  }
+  background: {
+    color: $navbar-color;
+  }
+}
+
+.element {
+  color: $text-color;
+  text: {
+    decoration: none;
+  }
+  padding: {
+    left: 5rem;
+    right: 5rem;
+    top: 1rem;
+    bottom: 1rem;
+  }
+  background: {
+    color: $navbar-color;
+  }
+  text: {
+    align: center;
+  }
+  justify: {
+    content: center;
+  }
+
+  &:hover {
+    background: {
+      color: $navbar-hover-color;
+    }
+  }
+}

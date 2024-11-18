@@ -1,0 +1,41 @@
+{
+  "name": "gatsby",
+  "version": "1.0.0",
+  "private": true,
+  "description": "gatsby",
+  "author": "Daniel Jorge Acosta",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "cypress run"
+  },
+  "dependencies": {
+    "gatsby": "^5.13.7",
+    "gatsby-plugin-image": "^3.14.0",
+    "gatsby-plugin-sass": "^6.14.0",
+    "gatsby-plugin-sharp": "^5.14.0",
+    "gatsby-source-custom-api": "^2.3.6",
+    "gatsby-source-filesystem": "^5.14.0",
+    "gatsby-transformer-json": "^5.14.0",
+    "gatsby-transformer-sharp": "^5.14.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "sass": "^1.80.7"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.15.0",
+    "cypress": "^13.15.2",
+    "eslint": "^9.15.0",
+    "eslint-loader": "^4.0.2",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-webpack-plugin": "^4.2.0",
+    "gatsby-plugin-eslint": "^4.0.4",
+    "globals": "^15.12.0"
+  }
+}

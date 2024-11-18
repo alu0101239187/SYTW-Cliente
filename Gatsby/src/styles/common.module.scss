@@ -1,0 +1,14 @@
+@use "_variables" as *;
+
+.link {
+  color: $text-color;
+  text: {
+    decoration: none;
+  }
+}
+
+.center {
+  text: {
+    align: center;
+  }
+}

@@ -1,0 +1,20 @@
+@use "sass:list";
+@use "_variables" as *;
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  $font-stack: list.append($font-stack, sans-serif);
+  font: $font-stack;
+  font: {
+    size: 1.2rem;
+  }
+  background: {
+    color: $background-color;
+  }
+  color: $text-color;
+}
