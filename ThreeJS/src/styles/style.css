@@ -1,0 +1,42 @@
+html,
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+.popup {
+  position: absolute;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+}
+
+.popup button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+}
+
+#btn {
+  position: absolute;
+  bottom: 25px;
+  right: 25px;
+  padding: 15px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+}
+#btn:hover {
+  background-color: #2980b9;
+}
