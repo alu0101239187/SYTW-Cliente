@@ -1,0 +1,16 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  padding-top: 2rem;
+  font-size: 1.2rem;
+  background-color: #c1d8f0;
+}
